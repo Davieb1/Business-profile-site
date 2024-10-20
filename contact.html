@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Empowering Fitness Businesses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Sticky Header -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <h2>Contact Us</h2>
+        
+        <form action="#" method="post">
+            <!-- Dropdown to select service -->
+            <div class="form-group">
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service" onchange="updateSubject()">
+                    <option value="">Please choose an option</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Fitness Web Development">Fitness Web Development</option>
+                </select>
+            </div>
+
+            <!-- Prefilled based on dropdown subject -->
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" value="Web Development enquiry" readonly>
+            </div>
+
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Davie Birrell. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" class="github"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript to update subject based on dropdown -->
+    <script>
+        function updateSubject() {
+            var service = document.getElementById("service").value;
+            var subjectField = document.getElementById("subject");
+
+            // Update the subject based on the selected service
+            if (service === "Web Development") {
+                subjectField.value = "Web Development enquiry";
+            } else if (service === "Fitness Web Development") {
+                subjectField.value = "Fitness Web Development enquiry";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

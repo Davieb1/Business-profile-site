@@ -1,0 +1,185 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #858181;
+}
+
+/* Sticky Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    background: green;
+}
+
+/* Contact Form Container */
+.container {
+    max-width: 450px; /* Reduced width for a more compact form */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem; /* Slightly reduced font size */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 0.9rem; /* Reduced label font size */
+}
+
+input[type="text"],
+input[type="email"],
+textarea, select {
+    width: 100%;
+    padding: 10px; /* Reduced padding for a more compact form */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem; /* Reduced button font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Social Icons Styling */
+footer .social-icons a {
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+/* Screen size smaller than 768px (tablets and small devices) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.85rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea, select {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
