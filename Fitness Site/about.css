@@ -1,10 +1,10 @@
 /* General Styling */
 body {
-    font-family: 'Georgia', serif;
-    color: #333;
-    background-color: #fff;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
     padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .container {
@@ -175,43 +175,28 @@ h3 {
     margin: 20px 0;
 }
 
-/* Styles for Larger Screens (Desktops) */
-@media (min-width: 769px) {
-    .hero-section .row {
-        display: flex;
-        align-items: center;
-    }
-
-    .hero-section .col-lg-6 img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-/* Styles for Smaller Screens (Tablets and Mobile) */
-@media (max-width: 768px) {
-    /* Stack the content vertically on smaller screens */
-    .hero-section .row {
-        display: flex;
+/* Media Query for 425px Width (Mobile) */
+@media (max-width: 425px) {
+    .navbar .nav-links {
         flex-direction: column;
-        text-align: center;
+        gap: 10px;
     }
 
-    /* Ensure the image is centered and fits the screen */
-    .hero-section .col-lg-6 img {
-        width: 80%; /* Adjust the width for smaller screens */
-        margin: 0 auto 20px; /* Center the image and add space below */
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .hero-section h2 {
-        font-size: 22px;
+    .about-text h2 {
+        font-size: 20px;
     }
 
-    .hero-section p {
-        font-size: 16px;
+    .about-text p {
+        font-size: 14px;
     }
 
-    .short-hr {
-        margin: 20px auto;
+    .cta-button {
+        width: 100%;
+        padding: 12px 0;
     }
 }
