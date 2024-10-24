@@ -1,0 +1,309 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.main-container {
+    background-image: url('../Fitness Site/img/gym.jpeg');
+    /* Ensure the path is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 10vh;
+    /* 10% of the viewport height */
+    position: relative;
+    /* For positioning nav on top of the image */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    color: #C5C4C4;
+}
+
+nav ul li {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-site a {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: blue;
+    text-decoration: none;
+}
+
+.main-site a:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 18px;
+    color: #666;
+}
+
+footer .email {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+footer .email a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Adjust container width for smaller screens */
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    nav {
+        width: 100%; /* Ensure nav takes full width */
+    }
+
+    .main-container {
+        height: 15vh; /* Slightly increase height for smaller screens */
+    }
+
+    /* Center the navigation links vertically */
+    nav ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .main-site a {
+        padding: 8px;
+    }
+
+    /* Contact section adjustments */
+    .contact-section h2 {
+        font-size: 30px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+    }
+
+    .contact-form {
+        max-width: 90%; /* Shrink form to fit smaller screens */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px; /* Adjust input font size for better fit */
+        padding: 8px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 30px 0;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+}
+
+/* Mobile view (max-width: 425px) */
+@media (max-width: 425px) {
+    /* Full width for smaller screens */
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .main-container {
+        height: 20vh; /* Increase height for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-site a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Contact section for mobile */
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 0 10px; /* Ensure the form fits properly */
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        width: 100%; /* Make button full width */
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer h2 {
+        font-size: 16px;
+    }
+
+    footer h3 {
+        font-size: 14px;
+    }
+
+    footer .email {
+        font-size: 14px;
+    }
+}
