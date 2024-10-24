@@ -20,42 +20,18 @@ body {
     align-items: center;
     padding: 20px 0;
     position: relative;
+    flex-wrap: wrap; /* Allows it to wrap on small screens */
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-/* Social Icons Styling */
-.social-icons {
-    position: absolute; /* Position the social icons absolutely */
-    left: 0; /* Align to the left of the screen */
-    display: flex;
-    gap: 15px;
-    padding-left: 20px; /* Add some padding from the left side */
-    align-items: center;
-}
-
-/* Social Icons Link Styling */
-.social-icons a {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/* Centering the nav-links */
-.nav-links {
+.navbar .nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-grow: 1; /* This allows the nav-links to grow and center themselves */
+    flex-grow: 1;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
-/* Nav Link Styling */
 .nav-links a {
     text-decoration: none;
     color: #000;
@@ -63,11 +39,18 @@ body {
     font-size: 18px;
 }
 
-.logo h1 {
-    font-family: 'Times New Roman', serif;
-    font-size: 28px;
-    font-weight: normal;
-    text-align: center;
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* Hero Section */
@@ -77,8 +60,9 @@ body {
 
 .hero-section .row {
     display: flex;
+    flex-direction: column; /* Stack content on small screens */
     align-items: center;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .hero-section h2 {
@@ -108,11 +92,10 @@ img {
     margin: 20px;
 }
 
-/* A link Hire Me */
+/* Hire Me Button */
 .hire-me {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .hire-me a {
@@ -121,15 +104,9 @@ img {
     padding: 14px 20px;
     text-decoration: none;
     border-radius: 4px;
-    margin-top: 20px;
 }
 
-p {
-    color: #C5C4C4;
-    margin-top: 20px;
-    margin: 60px;
-}
-
+/* Footer and Email Styling */
 footer h2 {
     font-size: 20px;
     text-align: center;
@@ -137,66 +114,74 @@ footer h2 {
     color: #333;
 }
 
-h3 {
-    font-family: italic;
-    margin-top: 20px;
-    text-align: center;
-    color: #969595;
-}
-
 .email {
     color: #000;
-    margin-top: 20px;
     text-align: center;
     font-size: 17px;
     text-decoration: underline;
 }
 
-/* Base Styles for Larger Screens */
-.hero-section .container {
-    padding: 20px;
-}
-
-.hero-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-}
-
-.hero-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.short-hr {
-    width: 50px;
-    border-top: 2px solid #333;
-    margin: 20px 0;
-}
-
-/* Media Query for 425px Width (Mobile) */
+/* Media Queries for Mobile (max-width: 425px) */
 @media (max-width: 425px) {
+    /* Navbar adjustments for mobile */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .navbar .nav-links {
         flex-direction: column;
         gap: 10px;
+        margin-top: 20px;
     }
-
+    
     .social-icons {
-        flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+        font-size: 18px;
     }
 
-    .about-text h2 {
-        font-size: 20px;
+    /* Hero Section adjustments */
+    .hero-section {
+        padding: 50px 0;
     }
 
-    .about-text p {
+    .hero-section h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    /* Hire Me Button adjustments */
+    .hire-me a {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Reduce footer text size */
+    footer h2 {
+        font-size: 18px;
+    }
+
+    .email {
         font-size: 14px;
     }
 
-    .cta-button {
-        width: 100%;
-        padding: 12px 0;
+    /* Remove any unnecessary margins that cause overflow */
+    p {
+        margin: 10px;
     }
 }
