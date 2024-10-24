@@ -125,12 +125,12 @@ footer h2 {
 @media (max-width: 425px) {
     /* Navbar adjustments for mobile */
     .navbar {
-        flex-direction: column;
+        display: flex;
         align-items: center;
     }
     
     .navbar .nav-links {
-        flex-direction: column;
+        display: flex;
         gap: 10px;
         margin-top: 20px;
     }
