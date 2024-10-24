@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.online-coaching, .hybrid-coaching, .gym-owners {
+    margin-bottom: 40px;
+}
+
+/* Gallery Styling */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gallery {
+    flex: 1;
+    margin: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Hire Me Button Styling */
+.hire-me {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+    border-top: 1px solid #eaeaea;
+}
+
+.email a {
+    font-size: 16px;
+    color: #000;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

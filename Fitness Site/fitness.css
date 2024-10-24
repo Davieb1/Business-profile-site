@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.main-container {
+    background-image: url('../Fitness Site/img/gym.jpeg'); /* Ensure the path is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh; /* 60% of the viewport height */
+    position: relative; /* For positioning nav on top of the image */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    color: #C5C4C4;
+}
+
+nav ul li {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    background-color: #969595;
+    margin-left: 60px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #dddada;
+}
+
+p {
+    color: #C5C4C4;
+    margin-top: 20px;
+    margin: 60px;
+}
+
+h2 {
+    color: #000;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-family: italic;
+    margin-top: 20px;
+    text-align: center;
+    color: #969595;
+}
+
+.email {
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: underline;
+}

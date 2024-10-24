@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    position: absolute; /* Position the social icons absolutely */
+    left: 0; /* Align to the left of the screen */
+    display: flex;
+    gap: 15px;
+    padding-left: 20px; /* Add some padding from the left side */
+    align-items: center;
+}
+
+/* Social Icons Link Styling */
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Centering the nav-links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1; /* This allows the nav-links to grow and center themselves */
+}
+
+/* Nav Link Styling */
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+}
+
+.hero-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #434242;
+}
+
+.short-hr {
+    width: 100px;
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/* A link Hire Me */
+.hire-me {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hire-me a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+p {
+    color: #C5C4C4;
+    margin-top: 20px;
+    margin: 60px;
+}
+
+footer h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    font-family: italic;
+    margin-top: 20px;
+    text-align: center;
+    color: #969595;
+}
+
+.email {
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: underline;
+}
