@@ -163,9 +163,26 @@ h3 {
 
     /* Stack the text and image */
     .about-section {
-        display: flex;
-        flex-direction: column;
+        padding: 20px;
         text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .about-section h1, .about-section {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
     .about-section img {
@@ -183,5 +200,26 @@ h3 {
 
     .about-section p {
         font-size: 14px;
+    }.about-section {
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .about-section h1, .about-section {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 }
