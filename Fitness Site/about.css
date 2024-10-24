@@ -151,3 +151,37 @@ h3 {
     font-size: 17px;
     text-decoration: underline;
 }
+
+/* Base Styles for Desktop */
+
+/* Adjustments for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust container width for smaller screens */
+    .about-container {
+        padding: 20px;
+    }
+
+    /* Stack the text and image */
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    /* Reduce font size for better readability */
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    .about-section p {
+        font-size: 14px;
+    }
+}

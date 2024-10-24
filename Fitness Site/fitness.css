@@ -85,3 +85,46 @@ h3 {
     font-size: 17px;
     text-decoration: underline;
 }
+
+/* Base Styles for Desktop (Default) */
+
+/* Adjustments for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    /* Ensure the main container adjusts to smaller screens */
+    .main-container {
+        height: auto; /* Adjust height to content size */
+    }
+
+    /* Make sure the hero section content stacks */
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Adjust image sizes for smaller screens */
+    .hero-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Make buttons and text fit on smaller screens */
+    .cta-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    /* Reduce font size for better readability */
+    h1, h2 {
+        font-size: 22px;
+    }
+
+    /* Make sure images take up the full width on mobile */
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+}
