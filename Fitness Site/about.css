@@ -1,10 +1,10 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    width: 100%;
-    padding: 0;
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #fff;
     margin: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 0;
 }
 
 .container {
@@ -20,18 +20,42 @@ body {
     align-items: center;
     padding: 20px 0;
     position: relative;
-    flex-wrap: wrap; /* Allows it to wrap on small screens */
 }
 
-.navbar .nav-links {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    position: absolute; /* Position the social icons absolutely */
+    left: 0; /* Align to the left of the screen */
+    display: flex;
+    gap: 15px;
+    padding-left: 20px; /* Add some padding from the left side */
+    align-items: center;
+}
+
+/* Social Icons Link Styling */
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Centering the nav-links */
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-grow: 1;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-grow: 1; /* This allows the nav-links to grow and center themselves */
 }
 
+/* Nav Link Styling */
 .nav-links a {
     text-decoration: none;
     color: #000;
@@ -39,18 +63,11 @@ body {
     font-size: 18px;
 }
 
-/* Social Icons Styling */
-.social-icons {
-    display: flex;
-    gap: 15px;
-    padding-left: 20px;
-    align-items: center;
-}
-
-.social-icons a {
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
+.logo h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
 }
 
 /* Hero Section */
@@ -60,9 +77,8 @@ body {
 
 .hero-section .row {
     display: flex;
-    flex-direction: column; /* Stack content on small screens */
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
 }
 
 .hero-section h2 {
@@ -92,10 +108,11 @@ img {
     margin: 20px;
 }
 
-/* Hire Me Button */
+/* A link Hire Me */
 .hire-me {
     text-align: center;
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .hire-me a {
@@ -104,9 +121,15 @@ img {
     padding: 14px 20px;
     text-decoration: none;
     border-radius: 4px;
+    margin-top: 20px;
 }
 
-/* Footer and Email Styling */
+p {
+    color: #C5C4C4;
+    margin-top: 20px;
+    margin: 60px;
+}
+
 footer h2 {
     font-size: 20px;
     text-align: center;
@@ -114,23 +137,70 @@ footer h2 {
     color: #333;
 }
 
+h3 {
+    font-family: italic;
+    margin-top: 20px;
+    text-align: center;
+    color: #969595;
+}
+
 .email {
     color: #000;
+    margin-top: 20px;
     text-align: center;
     font-size: 17px;
     text-decoration: underline;
+}
+
+/* Base Styles for Desktop */
+
+/* Adjustments for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust container width for smaller screens */
+    .about-container {
+        padding: 20px;
+    }
+
+    /* Stack the text and image */
+    .about-section {
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .about-section h1, .about-section {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-section img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Media Queries for Mobile (max-width: 425px) */
 @media (max-width: 425px) {
     /* Navbar adjustments for mobile */
     .navbar {
-        display: flex;
+        flex-direction: column;
         align-items: center;
     }
     
     .navbar .nav-links {
-        display: flex;
+        flex-direction: column;
         gap: 10px;
         margin-top: 20px;
     }
