@@ -152,74 +152,66 @@ h3 {
     text-decoration: underline;
 }
 
-/* Base Styles for Desktop */
+/* Base Styles for Larger Screens */
+.hero-section .container {
+    padding: 20px;
+}
 
-/* Adjustments for Tablets and Smaller Screens */
-@media (max-width: 768px) {
-    /* Adjust container width for smaller screens */
-    .about-container {
-        padding: 20px;
-    }
+.hero-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
 
-    /* Stack the text and image */
-    .about-section {
-        padding: 20px;
-        text-align: center;
-        margin: 0 auto;
-        overflow: hidden;
-    }
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
-    .about-section h1, .about-section {
-        font-size: 18px;
-    }
+.short-hr {
+    width: 50px;
+    border-top: 2px solid #333;
+    margin: 20px 0;
+}
 
-    .social-icons {
+/* Styles for Larger Screens (Desktops) */
+@media (min-width: 769px) {
+    .hero-section .row {
         display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
+        align-items: center;
     }
 
-    .gallery img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .about-section img {
+    .hero-section .col-lg-6 img {
         width: 100%;
         height: auto;
     }
 }
 
-/* Mobile Phones */
-@media (max-width: 480px) {
-    /* Reduce font size for better readability */
-    h1, h2 {
+/* Styles for Smaller Screens (Tablets and Mobile) */
+@media (max-width: 768px) {
+    /* Stack the content vertically on smaller screens */
+    .hero-section .row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Ensure the image is centered and fits the screen */
+    .hero-section .col-lg-6 img {
+        width: 80%; /* Adjust the width for smaller screens */
+        margin: 0 auto 20px; /* Center the image and add space below */
+    }
+
+    .hero-section h2 {
         font-size: 22px;
     }
 
-    .about-section p {
-        font-size: 14px;
-    }.about-section {
-        padding: 20px;
-        text-align: center;
-        margin: 0 auto;
-        overflow: hidden;
+    .hero-section p {
+        font-size: 16px;
     }
 
-    .about-section h1, .about-section {
-        font-size: 18px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .gallery img {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
+    .short-hr {
+        margin: 20px auto;
     }
 }
