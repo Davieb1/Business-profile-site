@@ -273,6 +273,10 @@ footer .social-icons a.instagram:hover {
         padding: 10px 20px;
     }
 
+    .split-left .cta-button {
+        padding: 10px
+    }
+
     /* Footer adjustments */
     footer {
         padding: 20px;
